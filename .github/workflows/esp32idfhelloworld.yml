@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: hello_world
-        path: hello_world
+        path: hello_world/build
