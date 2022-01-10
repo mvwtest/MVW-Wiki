@@ -5,13 +5,13 @@ on:
   repository_dispatch:
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
     - name: Installation depends
       run: |
         sudo apt-get update
-        sudo apt-get -y install git wget flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
-        sudo apt-get -y install gawk gperf grep gettext python python-dev automake bison flex texinfo help2man libtool libtool-bin make
+        sudo apt-get -y install git wget flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev
+        sudo apt-get -y install gawk grep gettext python python-dev automake texinfo help2man libtool libtool-bin make dfu-util libusb-1.0-0
         sudo apt-get -y install libsodium-dev libmbedtls-dev
     - name: Clone source code
       run: |
