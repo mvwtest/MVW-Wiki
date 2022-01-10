@@ -11,7 +11,7 @@ jobs:
         sudo apt-get -y install gawk gperf grep gettext python python-dev automake bison flex texinfo help2man libtool libtool-bin make
     - name: Clone source code
       run: 
-        mkdir -p ~/esp
+        mkdir ~/esp
         cd ~/esp
         git clone --recursive https://github.com/espressif/esp-idf.git
     - name: Generate config file
