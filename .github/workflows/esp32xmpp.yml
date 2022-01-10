@@ -1,4 +1,4 @@
-name: Build esp32idfhelloworld
+name: Build esp32-xmpp-iot
 on: push
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
       run: |
         cd ~/esp/esp-idf
         ./install.sh all
-    - name: make helloworld
+    - name: make esp32-xmpp-iot
       run: |
         . $HOME/esp/esp-idf/export.sh
         git clone https://github.com/COM8/esp32-xmpp-iot.git
