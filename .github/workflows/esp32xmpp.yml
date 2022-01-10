@@ -1,6 +1,8 @@
 name: Build esp32-xmpp-iot
 #on: push
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  repository_dispatch:
 jobs:
   build:
     runs-on: ubuntu-18.04
