@@ -27,4 +27,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: hello_world
-        path: $HOME/esp/esp-idf/examples/get-started/hello_world/build
+        path: /home/runner/esp/esp-idf/examples/get-started/hello_world/build
